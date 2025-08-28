@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Indonesia</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="navigationRight">
+            <img src="./images/logoHorizontal.png" alt="logo">
+            <nav>
+                <ul class="navigationMenu">
+                    <a href="#"><li>Contact Us</li></a>
+                    <a href="./FAQ.html"><li>FAQs</li></a>
+                    <a href="./aboutUs.html"><li>About us</li></a>
+                    <a href="#"><li>...</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="navigationLeft">
+            <div class="authenticationButtons">
+                <button class="loginButton">Login</button>
+                <button class="registerButton">Register</button>
+            </div>
+            <img src="./images/profile.png" alt="profile">
+            <img src="./images/Menu.png" alt="menu">
+        </div>
+    </header>
+    <section class="hero-section">
+    <h1 class="hero-title">FIND</h1>
+        <div class="search-tabs">
+            <button class="search-tab active">Rooms</button>
+            <button class="search-tab">Flats</button>
+            <button class="search-tab">Mansions</button>
+            <button class="search-tab">Villas</button>
+        </div>
+        <div class="search-container">
+            <form class="search-form">
+                <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" placeholder="Mau ke kota mana?">
+                </div>
+                <div class="form-group">
+                    <label>Check In</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Check Out</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select>
+                        <option>Add Guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-btn"><img src="images/search-icon.png" class="search-img"></button>
+            </form>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <section>
+            <h2 class="section-title">Yuk, cek inspirasi liburan di Indonesia ini</h2>
+            <div class="destination-grid">
+                <div class="destination-card" onclick="selectDestination('Jakarta')">
+                    <div class="heart-icon">♡</div>
+                    <div class="destination-info">
+                        <div class="destination-name">Jakarta</div>
+                        <div class="destination-desc">14,249 Akomodasi</div>
+                    </div>
+                </div>
+                <div class="destination-card" onclick="selectDestination('Bandung')">
+                    <div class="heart-icon">♡</div>
+                    <div class="destination-info">
+                        <div class="destination-name">Bandung</div>
+                        <div class="destination-desc">7,198 Akomodasi</div>
+                    </div>
+                </div>
+                <div class="destination-card" onclick="selectDestination('Yogyakarta')">
+                    <div class="heart-icon">♡</div>
+                    <div class="destination-info">
+                        <div class="destination-name">Yogyakarta</div>
+                        <div class="destination-desc">5,503 Akomodasi</div>
+                    </div>
+                </div>
+                <div class="destination-card" onclick="selectDestination('Surabaya')">
+                    <div class="heart-icon">♡</div>
+                    <div class="destination-info">
+                        <div class="destination-name">Surabaya</div>
+                        <div class="destination-desc">3,145 Akomodasi</div>
+                    </div>
+                </div>
+                <div class="destination-card" onclick="selectDestination('Bali')">
+                    <div class="heart-icon">♡</div>
+                    <div class="destination-info">
+                        <div class="destination-name">Bali</div>
+                        <div class="destination-desc">32,908 Akomodasi</div>
+                    </div>
+                </div>
+                <div class="destination-card" onclick="selectDestination('Palembang')">
+                    <div class="heart-icon">♡</div>
+                    <div class="destination-info">
+                        <div class="destination-name">Palembang</div>
+                        <div class="destination-desc">1,654 Akomodasi</div>
+                    </div>
+                </div>
+                <div class="destination-card" onclick="selectDestination('Malang')">
+                    <div class="heart-icon">♡</div>
+                    <div class="destination-info">
+                        <div class="destination-name">Malang</div>
+                        <div class="destination-desc">2,439 Akomodasi</div>
+                    </div>
+                </div>
+                <div class="destination-card" onclick="selectDestination('Batam')">
+                    <div class="heart-icon">♡</div>
+                    <div class="destination-info">
+                        <div class="destination-name">Batam</div>
+                        <div class="destination-desc">1,813 Akomodasi</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Jangan sampai kelewatan promo akomodasi ini!</h2>
+            <div class="promo-grid">
+                <div class="promo-card"></div>
+                <div class="promo-card"></div>
+                <div class="promo-card"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerContent">
+                <div class="footerBrand">
+                    <div class="logo">
+                        <div class="logoIcon">
+                            <img src="./images/logoHorizontal.png" alt="">
+                        </div>
+                    </div>
+                    <p class="footerDescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="appButtons">
+                        <a href="#" class="appButton">
+                            <img src="./images/playstore.png" alt="">
+                            <p>PlayStore</p>
+                        </a>
+                        <a href="#" class="appButton">
+                            <img src="./images/appstore.png" alt="">
+                            <p>AppStore</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footerColumn">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Legal Information</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footerColumn">
+                    <h3>Help Center</h3>
+                    <ul>
+                        <li><a href="#">Find a Property</a></li>
+                        <li><a href="#">How To Host?</a></li>
+                        <li><a href="#">Why Us?</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Rental Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footerColumn">
+                    <h3>Contact Info</h3>
+                    <div class="contactInfo">
+                        <div><strong>Phone:</strong> 1234567890 </div>   
+                        <div><strong>Email:</strong> staysantay@email.com</div>
+                        <div><strong>Location:</strong> Pontianak</div>
+                    </div>
+                    <div class="socialIcons">
+                        <a href="" class="socialIcon">
+                            <img src="./images/fb.png" alt="">
+                        </a>
+                        <a href="#" class="socialIcon">
+                            <img src="./images/x.png" alt="">
+                        </a>
+                        <a href="#" class="socialIcon">
+                            <img src="./images/insta.png" alt="">
+                        </a>
+                        <a href="#" class="socialIcon">
+                            <img src="./images/link.png" alt="">
+                        </a>
+                    </div>  
+                </div>
+            </div>
+            <div class="footerBottom">
+                © 2025 StaySantay | All rights reserved
+            </div>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>
